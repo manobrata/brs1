@@ -104,11 +104,11 @@ cat <<EOF | sudo tee /etc/modules-load.d/containerd.conf
         kubectl apply -f https://docs.projectcalico.org/manifests/calico.yaml
 
 
- #   Wait for 2-4 Min and Check the status of the control plane node:
+   Wait for 2-4 Min and Check the status of the control plane node:
 
         kubectl get nodes   
         
-       #  Join the Worker Nodes to the Cluster
+    # Join the Worker Nodes to the Cluster
 
       #  In the Control Plane Node, create the token and copy the kubeadm join command (NOTE: The join command can also be found in the output from kubeadm init command):
 
