@@ -12,6 +12,7 @@ composer create-project laravel/laravel app1
 docker build -t app1 .
 
 docker tag  app1 manobrata/brsimage1:app1
+
 docker push manobrata/brsimage1:app1
 
 # For app2
